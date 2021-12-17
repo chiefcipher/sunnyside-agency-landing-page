@@ -1,0 +1,52 @@
+.stand-out-img {
+  img {
+    @include sizeImage;
+  }
+}
+
+.transform-brand-img {
+  img {
+    @include sizeImage;
+  }
+}
+
+.graphic__design {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+
+  @media screen and (min-width: $bp-mobile) {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+  
+  @media screen and (min-width : $bp-mobile) and (max-width : $bp-700){
+    background-image: linear-gradient(to right, rgba(#000,.25) , rgba(#000,.25) ), url("../images/desktop/image-graphic-design.jpg");
+    
+  }
+}
+
+.photography {
+  background-image: url("../images/mobile/image-photography.jpg");
+
+  @media screen and (min-width: $bp-mobile) {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+  @media screen and (min-width : $bp-mobile) and (max-width : $bp-700){
+    background-image: linear-gradient(to right, rgba(#000,.25) , rgba(#000,.25) ), url("../images/desktop/image-photography.jpg");
+    
+  }
+}
+
+.attribution {
+  font-size: 1.2rem;
+  font-family: $f-barlow-semibold;
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    rgba($c-grayish-blue, 0.2),
+    rgba($c-grayish-blue, 0.2)
+  );
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

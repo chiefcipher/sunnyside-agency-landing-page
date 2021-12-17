@@ -1,0 +1,40 @@
+.no-style-type {
+  list-style-type: none;
+}
+
+.no-deco {
+  text-decoration: none;
+}
+
+//margin
+.mb-10 {
+  margin-bottom: 1rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.mt-10 {
+  margin-top: 1rem;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+
+//PADDING (PERCENT)
+//plr-20-p padding left and right 20 percent
+.plr-20-p {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

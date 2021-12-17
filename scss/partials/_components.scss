@@ -1,0 +1,138 @@
+.btn { 
+    outline : none ; 
+    border : none ;
+    position: relative ;
+    background : transparent ; 
+    text-transform: uppercase ;
+    color : $c-very-dark-desaturated-blue ;
+    font-family: $f-fraunces-black;
+
+    &__attributes { 
+        position : relative ; 
+
+        z-index: 3;
+
+
+
+        &:hover + .btn-b { 
+            opacity: 1;
+        }
+
+    }
+    &-b { 
+        position: absolute ; 
+        bottom : 0 ; 
+        left : 0 ; 
+        width : 100% ; 
+        height :4px  ;
+        border-radius : 3px ; 
+        transform : scaleX(1.05) translateY(-.2rem) ; 
+        z-index: 2; 
+        opacity: .7;
+
+
+    }
+
+    &-b-y { 
+        background : $c-yellow ;
+    }
+    &-b-r { 
+       background : $c-soft-red ; 
+    }
+}
+
+
+//ATTRIBUTES COMPONENTS  USED IN STANDOUT AND TRANSFORM SECTIONS
+.attributes { 
+    font-size : 1.8rem ;
+    display : flex ; 
+    flex-direction: column ; 
+    justify-content: center ;
+    align-items: flex-start ; 
+    padding-left: 20% ; 
+    padding-right: 20% ;
+
+    @media screen and (max-width : $bp-mobile) , (min-width : $bp-mobile) and (max-width : $bp-700){
+        
+        padding : 20% 10% ; 
+        
+
+    }
+
+    @media screen and (max-width : $bp-mobile ) {
+        text-align : center ; 
+    }
+
+
+
+    & > * { 
+        display : block 
+    }
+    &__heading { 
+        color : $c-very-dark-desaturated-blue ;
+        font-family: $f-fraunces-bold;
+        font-size : 3.5rem ; 
+    
+        
+    }
+
+    &__body { 
+        font-size : .8em ;
+        color : $c-very-grayish-blue;
+        line-height : 2 ; 
+         font-family: $f-barlow-semibold;
+
+
+    }
+
+    &__btn-container { 
+        position : relative ; 
+
+        @media screen and (max-width : $bp-mobile ) {
+            left : 50% ; 
+            transform: translateX(-50%);
+        }
+        
+    }
+}
+
+
+//ATTRIBUTES CENTER USED IN PHOTOGRAPHY AND GRAPHICS SECTION 
+.attributes-center { 
+    display: flex ;
+    flex-direction: column ; 
+    align-items: center ; 
+    justify-content: space-between ;
+    font-size : 1.8rem ; 
+    color : $c-dark-desaturated-cyan ; 
+    
+    @media screen and (min-width : $bp-mobile) and (max-width : $bp-700) {
+        color : $c-white;
+    }
+
+    &__heading { 
+        margin-top: auto ;
+        font-family: $f-fraunces-bold ;
+        letter-spacing: .05em;
+        
+
+
+    }
+    &__body { 
+        font-size : .75em ; 
+        text-align : center ; 
+        font-family: $f-barlow-semibold;
+        line-height : 1.5 ; 
+        width : 45% ;
+        margin-bottom : 3rem ; 
+
+        @media screen and (max-width  :$bp-mobile) {
+            width : 95%
+        }
+        
+        
+
+    }
+}
+
+

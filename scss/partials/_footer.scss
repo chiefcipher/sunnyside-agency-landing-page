@@ -1,0 +1,53 @@
+.footer { 
+    background : rgba($color: $c-dark-moderate-cyan, $alpha: .5); 
+    font-size : 1.8rem ; 
+    display : flex ; 
+    flex-direction: column ; 
+    align-items:  center ;
+    color : $c-dark-desaturated-cyan ;
+
+    &__logo { 
+        margin : 5rem 0 4rem 0 ;
+
+    }
+
+    ul  { 
+        display: flex ;
+        justify-content  : center ;
+        margin-bottom: 5rem ;
+
+        li 
+        { 
+            a {
+                display: block ; 
+                padding: 1rem 2rem ; 
+                font-size : .8em ; 
+                
+               
+                color : $c-dark-moderate-cyan ;
+                &:hover { 
+                    color :  $c-white;
+                }
+            }
+
+        }
+    }
+
+    ul.icon-list { 
+        .tester path { 
+            fill : red ; 
+        }
+
+        li { 
+            padding : 0 1rem ; 
+        }
+        
+        .icon-list__icon { 
+            width : 2rem ; 
+            height : 2rem ; 
+        }
+        .icon-list__icon:hover path { 
+            fill : $c-white
+        }
+    }
+}

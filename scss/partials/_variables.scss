@@ -1,0 +1,30 @@
+//COLORS
+
+//primary
+$c-soft-red: hsl(7, 99%, 70%);
+$c-yellow: hsl(51, 100%, 49%);
+$c-dark-desaturated-cyan: hsl(167, 40%, 24%); //graphics design text
+$c-dark-blue: hsl(198, 62%, 26%); //PHOTOGRAPHY TEXT
+$c-dark-moderate-cyan: hsl(168, 34%, 41%); //FOOTER
+
+//neutral colors
+$c-very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$c-very-grayish-blue: hsl(213, 9%, 39%);
+$c-dark-grayish-blue: hsl(232, 10%, 55%);
+$c-grayish-blue: hsl(210, 4%, 67%);
+$c-white: hsl(0, 0%, 100%);
+
+$bp-mobile: 375px;
+$bp-tablet: 768px;
+$bp-700: 700px;
+
+$f-barlow-semibold: "Barlow SemiBold"; //w-600
+$f-fraunces-black: "Fraunces Black"; //900
+$f-fraunces-bold: "Fraunces Bold"; //700
+
+//MIXIN FOR IMAGES
+@mixin sizeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

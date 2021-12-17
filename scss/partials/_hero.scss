@@ -1,0 +1,130 @@
+.hero {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    font-size: 1.8rem;
+    color: $c-white;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding: 2rem 1rem;
+    }
+
+
+  }
+
+  &__nav-icon {
+    display: none;
+
+    @media screen and (max-width: $bp-mobile) , (min-width : $bp-mobile) and (max-width : $bp-700) {
+      display: block;
+    }
+  }
+
+  &__items {
+    font-family: $f-barlow-semibold;
+    display: flex;
+
+    @media screen and (max-width: $bp-mobile) , (min-width : $bp-mobile) and (max-width : $bp-700) {
+      position: fixed;
+      background: $c-white;
+      top: 10%;
+      z-index: 20;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85%;
+      text-align: center;
+      color: $c-dark-grayish-blue;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15%;
+      padding-bottom: 7.5%;
+
+      clip-path: polygon(0 7.55%, 90% 7.55%, 100% 0, 100% 100%, 0 100%, 0 0);
+      display: none;
+      transition: all 0.2s linear;
+
+      &.mobile-view {
+        display: flex;
+      }
+    }
+  }
+
+  &__item {
+    color: inherit;
+    font-size: 0.8em;
+    width: fit-content;
+
+    &:link,
+    &:visited {
+      display: block;
+      padding: 1.3rem 2.5rem;
+      border-radius: 2rem;
+
+      @media screen and (max-width: $bp-mobile) {
+        margin-bottom: 1rem;
+      }
+      @media screen and  (min-width : $bp-mobile )  and (max-width : $bp-700 ) { 
+        padding : 2rem 5rem ; 
+
+      }
+      
+    }
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      background: rgba($c-white, 0.3);
+    }
+  }
+
+  &__item.active {
+    background: $c-white;
+    color: $c-very-dark-desaturated-blue;
+    font-family: $f-fraunces-bold;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+      background: rgba($c-white, 0.3);
+      color: $c-white;
+    }
+
+    @media screen and (max-width: $bp-mobile) ,(min-width : $bp-mobile) and (max-width : $bp-700) {
+      background: $c-yellow;
+      &:hover,
+      &:active,
+      &:focus-visible {
+        color: $c-yellow;
+      }
+    }
+    
+  }
+  &__welcome-text {
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: $f-fraunces-bold;
+    color: $c-white;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    letter-spacing: 0.2em;
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__welcome-arrow {
+    display: block;
+    margin: 0 auto;
+  }
+}

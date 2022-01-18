@@ -4,14 +4,16 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I love about this](#what-i-admire-about-this-project)
-- [Author](#author)
+- [Frontend Mentor - Sunnyside agency landing page solution](#frontend-mentor---sunnyside-agency-landing-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I Admire about this project](#what-i-admire-about-this-project)
+  - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -32,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/chiefcipher/sunnyside-agency-landing-page
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL:https://chiefcipher.github.io/sunnyside-agency-landing-page/
 
 ## My process
 
@@ -48,7 +50,8 @@ Users should be able to:
 ### What I Admire about this project
 
 - It component based system allowed me to think ahead of time how my code needs to be inorder to ensure i dont repeat myself
-- It grid system 
+- It grid system
+- Use of responsive images to ensure those on smaller screen sizes do not download unnecessary large files
 
 
 ## Author
